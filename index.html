@@ -2,45 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Heartfelt Journey – Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f2;
       color: #333;
-      text-align: center;
+      font-family: 'Open Sans', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background: url('A_digital_graphic_background_image_features_a_soft.png') no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 2rem 3rem;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      text-align: center;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #2a2a2a;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #555;
+      max-width: 500px;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
+  <div class="fade-in">
+    <!-- Optional Logo -->
+    <!-- <img class="logo" src="logo.png" alt="Heartfelt Journey Logo" width="100"> -->
+
     <h1>Heartfelt Journey</h1>
-    <p>Our new site is coming soon. Stay tuned!</p>
+    <p>We’re creating a space for healing, growth, and connection.<br />Our site is coming soon.</p>
   </div>
 </body>
 </html>
